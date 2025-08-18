@@ -12,3 +12,7 @@ user = User.where(email: "iandrc9@gmail.com").first_or_initialize(
   password_confirmation: "12345678",
 )
 user.save!
+
+# 100.times do |i|
+#   BlogPost.create title: "Blog Post #{i}", content: "Hello World", published_at: Time.current
+# end
